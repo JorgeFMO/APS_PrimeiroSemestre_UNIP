@@ -1,0 +1,344 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Atitude positiva </title>
+        <meta charset="utf-8">
+        <meta name="author" content="APS 2022">
+        <meta name="description" content="Tudo sobre Extição Marinha">
+        <meta name="keywords" content="html5, informação, vida marinha">
+        
+        <link rel="stylesheet" href="css/estilo_atitude.css">
+
+        <style >
+            .modal{
+             position: fixed;
+             padding: 0;
+             left: 0;
+             top: 0;
+             width: 100%;
+             height: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             background-color: rgba(0,0,0,0.5);
+             transform: scale(1.1);
+             opacity: 0;
+             visibility: hidden;
+             transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+            } 
+            .modal-content{
+             background-color: white;
+             padding: 16px 24px;
+             width: 384px;
+             border-radius: 0.5rem;
+            }
+            button{
+             background: #003d52;
+             color: white;
+             width: 300px;
+             float: right;
+             margin-right: 360px;
+             font-size: 30px;
+             text-align: center;
+             }
+            .btn{
+             float: left;             
+             width: 104px;
+             cursor: pointer;
+             background-color: #003d52;
+             color: white;
+             text-align: center;
+             line-height: 24px;
+            }
+            .span2{
+             float: left;             
+             width: 24px;
+             cursor: pointer;
+             background-color: #003d52;
+             color: white;
+             text-align: center;
+             line-height: 24px;
+            }
+            span:hover{
+             background-color: darkgrey;
+            }
+            .showmodal{
+             opacity: 1;
+             visibility: visible;
+             transform: scale(1.0);
+            }
+           
+      </style>
+     
+       <script>
+            function showmodal(){
+              var element = document.getElementById("modal");
+              element.classList.add("showmodal");
+            }
+            function hideModal(){
+              var element = document.getElementById("modal");
+              element.classList.remove("showmodal");
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div id="principal">
+            
+            <header class="header-top">
+               
+                <nav class="header-nav1">
+                    <ul>
+                       
+                        <li class="lista1"><a href="index.html"><b>Home</b></a></li>
+                        <li class="lista2"><a href="sobre.html"><b>Quem Somos</b></a></li>
+                        <li class="lista3"><a href="#">Problemas Atuais</a>
+                              <ul>
+                                <li class="lista3"><a href="vida_ext.html">1. Vidas em Extinção</a></li>
+                                <li class="lista3"><a href="prob_amb.html">2. Problemas Ambientais</a></li>
+                                <li class="lista3"><a href="petroxcoral.html">3. Petróleo x Recifes</a></li>
+                                <li class="lista3"><a href="poli_mar.html">4. Poluição Marinha</a></li>
+                              </ul>                              
+                            </li>
+                       
+                    </ul>
+                </nav>
+               
+             </header>
+
+             <div>
+               <img style="padding-top:5.0em;" src="imagens/7atitude.png" alt="Pessoa estudando">
+               <h1 class="logotipo"><strong><u>Atitude</u> <u>positiva</u></strong></h1>
+             </div>
+
+             <article class="portfolio">                 
+                 <p>A ONU propõe dez atitudes que cada um de nós pode tomar para ajudar salvar os oceanos (e sua vida marinha)</p>
+                 <p>Você pode fazer a sua parte e ajudar a ONU a proteger a natureza.</p>
+                 <h1>Confira essas 10 dicas de como combater a degradação do meio ambiente:</h1>
+             </article>
+             
+             <section class="gallery">
+                 <article class="gallery-card">
+                     <img src="imagens/7atitude1.png" alt="Excesso de lixo nos oceanos">
+                    
+                     <p class="gallery-title">Pare de beber água em garrafas de plástico</p>
+                     <p class="gallery-text">Você provavelmente já comprou uma garrafa de água e a jogou fora logo depois de bebê-la. Por dia, milhões de pessoas em todo o mundo estão fazendo exatamente a mesma coisa. A taxa média global de reciclagem de plástico é de 25%, o que significa que um volume enorme de lixo plástico vai parar nos oceanos — e, acredite, muitos desses resíduos são garrafas descartáveis de água.</p>
+                     <p class="gallery-text">São necessários pelo menos 450 anos para que uma garra plástica se decomponha e desapareça do meio ambiente. Você pode imaginar as consequências disso para a natureza. Em vez de continuar consumindo esse tipo de produto, substitua-o por uma garrafa de aço inoxidável que não seja descartável.</p>
+                  </article>
+                 
+                  <article class="gallery-card">
+                     <img src="imagens/7atitude2.png" alt="Aumento da temperatura da água">
+                     
+                     <p class="gallery-title">Não jogue bitucas de cigarro na rua</p>
+                     <p class="gallery-text">Cigarros fazem mal aos humanos, mas você sabia que eles também fazem mal aos oceanos?</p>
+                     <p class="gallery-text">Por ano, 4,5 trilhões de guimbas de cigarro são jogadas no lixo em todo o mundo. Assim como as garrafas plásticas, muitas delas vão parar no mar e nas praias. Filtros de cigarro têm, em sua composição, milhares de substâncias químicas, que podem matar peixes marinhos e de água doce. Se você fuma, jogue sua bituca numa lata de lixo e não, no chão da rua.</p>
+                  </article>
+                 
+                  
+                 
+             </section>
+
+             <section class="gallery">
+                <article class="gallery-card">
+                    <img src="imagens/7atitude3.png" alt="Pesca ilegal">
+                    <
+                    <p class="gallery-title">Faça escolhas mais conscientes quando comer frutos do mar</p>
+                    <p class="gallery-text">Com a demanda global por peixe crescendo a cada ano, locais de pesca em todo o mundo estão entrando em colapso por causa de práticas pesqueiras insustentáveis. Quando você comprar peixe, tenha certeza de que se trata de peixe capturado ou criado de uma forma ambientalmente responsável.</p>
+                    
+                 </article>
+                
+                <article class="gallery-card">
+                    <img src="imagens/7atitude4.png" alt="Acidificação da águas">
+                    
+                    <p class="gallery-title">Diminua sua pegada de carbono</p>
+                    <p class="gallery-text">Os oceanos absorvem mais de 25% das emissões de dióxido de carbono geradas pelo homem. Mas não sem consequências. O resultado é a “acidificação” das águas marinhas, um fenômeno que ameaça uma ampla gama de espécies. Combater a acidificação marinha é igual a combater as mudanças climáticas: precisamos reduzir as emissões de CO2.</p>
+                    <p class="gallery-text">A nível individual, isso significa optar por se deslocar de bicicleta ou transporte público em vez de usar o carro; diminuir o consumo geral de energia; usar fontes de energia “verdes”, como energia solar e eólica; e fazer escolhas mais conscientes sobre o que comer e o que comprar.</p>
+                 </article>
+                
+                 
+            </section>
+
+            <section class="gallery">
+                <article class="gallery-card">
+                    <img src="imagens/7atitude5.png" alt="Pesca ilegal">
+                    
+                    <p class="gallery-title">Não use itens descartáveis feitos de plástico</p>
+                    <p class="gallery-text">Mais de 50% das tartarugas marinhas morrem por ingerir alguma forma de lixo. Cerca de 90% de todo o lixo flutuando nos oceanos é plástico. Estudos mostram que, diariamente, a população dos Estados Unidos usa e joga fora 500 milhões de canudos.</p>
+                    <p class="gallery-text">Algumas estimativas apontam que, se não for diminuído o ritmo com que se descartam itens como copos, talheres, sacolas, canudos e garrafas descartáveis, os oceanos terão até 2050 mais plásticos que peixes, e 99% das aves marinhas terão ingerido o material.</p>
+                    <p class="gallery-text">Escolha produtos que sejam reutilizáveis.</p>
+                 </article>
+                
+                <article class="gallery-card">
+                    <img src="imagens/7atitude6.png" alt="Acidificação da águas">
+                    
+                    <p class="gallery-title">Seja um consumidor informado</p>
+                    <p class="gallery-text">Com o esgoto, microplásticos da sua pasta de dente, produtos de higiene e roupas são lançados ao mar. Ainda é impossível retirá-los dos oceanos por causa do seu tamanho pequeno. Pesquisas indicam que pelo menos 51 trilhões de partículas de microplástico já estejam em nossos mares atualmente.</p>
+                    <p class="gallery-text">Isso coloca em risco não apenas os animais que ingerem esse lixo, mas também os humanos, que comem o material ao consumir frutos do mar.</p>
+                    <p class="gallery-text">Ao comprar produtos de cuidado pessoal, evite os que contêm micropartículas. Você pode fazer isso olhando a lista de ingredientes. Se contiver polipropileno, polietileno, tereftalato de polietileno ou metacrilato de polimetilo, não compre.</p>
+                 </article>
+                
+                 
+            </section>
+
+            <section class="gallery">
+                <article class="gallery-card">
+                    <img src="imagens/7atitude7.png" alt="Pesca ilegal">
+                    
+                    <p class="gallery-title">Organize um mutirão de limpeza de praia</p>
+                    <p class="gallery-text">Provavelmente você verá a poluição marinha em primeira mão se for à praia mais próxima de você. Pedaços de plástico, como tampinhas de garrafa ou canudos, são frequentemente encontrados na costa. Que tal levar seus amigos e os amigos deles para uma coleta de lixo? Lembre-se de se assegurar que o material recolhido seja descartado de uma maneira sustentável, de modo que os resíduos não cheguem, por uma segunda vez, ao mar.</p>
+                    
+                 </article>
+                
+                <article class="gallery-card">
+                    <img src="imagens/7atitude8.png" alt="Acidificação da águas">
+                    
+                    <p class="gallery-title">Evite embalagens e sacos plásticos</p>
+                    <p class="gallery-text">Você já deve ter entendido que o plástico destrói os oceanos. Quando for ao supermercado, use sacolas de papel em vez das de plástico na hora de empacotar as compras. Prefira produtos que vêm embalados em vidro ou papel aos que chegam já em embalagens plásticas para o consumidor.</p>
+                    
+                  </article>
+                
+                 
+            </section>
+
+            <section class="gallery">
+                <article class="gallery-card">
+                    <img src="imagens/7atitude9.png" alt="Pesca ilegal">
+                    
+                    <p class="gallery-title">Cuide do seu animal doméstico com responsabilidade</p>
+                    <p class="gallery-text">Se você tem um animal de estimação, é muito provável que você tenha causado algum mal aos ecossistemas oceânicos sem nem saber. Os resíduos das caixas de areia dos gatos são muito destrutivos para a vida marinha. Portanto, não os despeje na privada, pois eles vão parar no mar ao longo da cadeia de esgotos.</p>
+                    <p class="gallery-text">Ao comprar ração, tenha certeza de que o produto está livre de ingredientes que não sejam ambientalmente responsáveis.</p>
+                    <p class="gallery-text">Se tiver um aquário, evite comprar peixes de água salgada capturados de ambientes silvestres.</p>
+                    <p class="gallery-text">Nunca solte peixes de aquário, que não são nativos da região, no mar. Embora possa parecer uma ótima ideia, a iniciativa pode ter impactos negativos consideráveis para a vida marinha nativa.</p>
+                 </article>
+                
+                <article class="gallery-card">
+                    <img src="imagens/7atitude10.png" alt="Acidificação da águas">
+                    
+                    <p class="gallery-title">Apoie uma organização que proteja a vida marinha</p>
+                    <p class="gallery-text">Toda a vida marinha — das tartarugas aos corais e focas — está ameaçada. A acidificação dos oceanos, a perda de habitats, espécies invasoras, poluição e sobrepesca são os principais fatores responsáveis por reduzir a biodiversidade dos nossos oceanos. Se você se preocupa com a vida debaixo d’água e se você se preocupa consigo mesmo, doe tempo ou dinheiro para uma organização que ajudará a combater esses problemas.</p>
+                    
+                 </article>
+                
+                 
+            </section>
+
+             
+             <article class="about">
+                 <h2>Atualmente, cerca de<br/> 40% dos oceanos são<br/>considerados densamente afetados por ações do homem.</h2>
+                 <p>Os oceanos são fonte de vida, abrigando uma vasta parcela da biodiversidade e fornecendo recursos naturais preciosos para a sobrevivência de comunidades costeiras. Todavia, a superexploração dos biomas marinhos, a gestão inadequada do lixo e do esgoto e padrões produtivos altamente poluentes ameaçam a saúde dos mares. Atualmente, cerca de 40% dos oceanos são considerados densamente afetados por ações do homem. Cada um de nós pode tomar para ajudar a reverter esse cenário.</p>
+             </article>
+             
+             
+             <div id="contact">
+                <address>
+                    Ajude-nos a salvar o nosso planeta <br>
+                    faça uma doação
+                </address>
+             </div>
+             
+           
+                   
+                   <button onclick="showmodal()">Doar</button>
+                   <div class="modal" id="modal">
+                     <divi class="modal-content">
+                         
+                         <span class="span2" onclick="hideModal()">&times;</span>
+                         <form action="#" method="GET" class=formLogin>
+                            <fieldset class="form1">
+                                <legend><u>Dados Pessoais</u></legend>
+                                
+                                <label>Nome</label>
+                                <input type="text" placeholder="digite seu nome completo" ><br/>
+                                <label>Email</label>
+                                <input type="email" placeholder="digite um email válido"><br/>
+                                <label>Data de Nascimento</label>
+                                <input type="date" min="1910-07-01" max="2021-12-30">        
+                                
+                            </fieldset>
+                            <fieldset class="form1">
+                                <legend><u>Seja um Doador</u></legend>
+                                
+                                
+                                <label>
+                                    <input type="radio" name="doador" value="V">
+                                    Vitalício
+                                </label>
+                
+                                <label>
+                                    <input type="radio" name="doador" value="A">
+                                    Anual
+                                </label>
+                
+                                <label>
+                                    <input type="radio" name="doador" value="M">
+                                    Mensal
+                                </label>                                     
+                                
+                            </fieldset>
+                            <fieldset class="form1">
+                                <legend><u>Valor da Doação</u></legend>
+                                
+                                
+                                <label>
+                                    <input type="radio" name="valor" value="R$ 10,00">
+                                    R$ 10,00
+                                </label>
+                
+                                <label>
+                                    <input type="radio" name="valor" value="R$ 30,00">
+                                    R$ 30,00
+                                </label>
+                
+                                <label>
+                                    <input type="radio" name="valor" value="R$ 50,00">
+                                    R$ 50,00
+                                </label>  
+                                <br/>
+                                <label>
+                                    <input type="radio" name="valor" value="R$ 70,00">
+                                    R$ 70,00
+                                </label>    
+
+                                <label>
+                                    <input type="radio" name="valor" value="R$ 100,00">
+                                    R$ 100,00
+                                </label>    
+
+                                <label>
+                                    <input type="radio" name="valor" value="R$ 150,00">
+                                    R$ 150,00
+                                </label>    
+                                
+                            </fieldset>
+                            <fieldset class="form1">
+                                <legend><u>Dados Pessoais</u></legend>
+                                
+                                <label>Numero</label>
+                                <input type="number" min="10"  placeholder="digite o numero do cartão"><br/>                                
+                                <label>Validade</label>
+                                <input type="date" min="1910-07" max="2041-12"> <br/>
+                                <label>Cod. Segurança</label>
+                                <input type="number"  > <br/>      
+                                <label>Nome do Titular</label>
+                                <input type="text" placeholder="digite o nome do titular da conta" ><br/>
+                            </fieldset>
+                            <input type="submit" value="Doar" class="btn" onclick="alert('Doação realizada com Sucesso!')">
+                     </divi>
+                   </div>
+                    
+               </fieldset>
+              </form>
+<br/><br/>
+
+
+             
+
+                <footer class="rodape">
+                    <p><a href="https://www.ecodebate.com.br/2018/01/04/10-atitudes-que-voce-pode-tomar-para-salvar-os-oceanos/" target="_blank">Bio 01</a>  APS Unip 2022  </p>
+                
+             </footer>           
+            
+        </div>
+    </body>
+</html>

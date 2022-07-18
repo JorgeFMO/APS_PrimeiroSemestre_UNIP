@@ -1,0 +1,179 @@
+body{
+   
+    font-family: tahoma, arial, sans-serif;
+    margin: 0; /*bom zerar, pq já é criado algo e não influencia no projeto*/
+    padding: 0; /*bom zerar, pq já é criado algo e não influencia no projeto*/
+}
+#principal{
+  
+    width: 64em; /*A pagina está no tamanho da foto, se almentar ou dinimuir altera o texto e o deslocamento da foto*/
+    margin: 0em auto; /*os 20px é margem do topo, o AUTO vai deixar o Site centralizado de acordo com o width: 1024px*/
+}
+
+.header-top{
+    	
+	height: 4.4em; /*2-Como já foi definido a altura aqui*/
+    background: #003d52;
+    position: fixed;  /*1-esse se relaciona com esse*/
+	width: 64em;
+	margin: auto;
+	z-index: 1;
+}
+
+.logotipo{
+    font-family:'Courier New', Courier, monospace ;
+    margin: 0 0 0 0.6em;
+    padding-top: 0.2em;    
+    color: #003d52;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; /*espaço entre as letras do texto*/
+    text-shadow: 0.1em 0.3em 0.2em #003d52;
+}
+
+.header-nav1{
+    /*position: absolute;*/ /*1-com esse, se tirar o RELATIVE da Class header-top o absolute faz ele se relacionar com o BODY*/
+    top: 0;
+    right: 0;
+    height: 100em; /*2-Aqui pode ter a altura em 100%*/
+}
+.header-nav1 ul{
+    margin: 8px; /*3-zerei a margem aqui,*/
+    padding: 0; /*4-zerei deslocamento aqui,*/
+    float: left;
+}
+.header-nav1 .lista1{
+    list-style: none;
+    display: inline-block; /*Transforma texto em bloco e coloca um do lado do outro*/
+    margin: 0 o 0 0; /*3-para colocar a margem que eu queria aqui*/
+    padding: 5px 15px 0 0; /*4-para colocar o deslocamento/distanciar do topo que eu queria aqui*/
+}
+.header-nav1 .lista2{
+    list-style: none;
+    display: inline-block; /*Transforma texto em bloco e coloca um do lado do outro*/
+    margin-right: auto; /*3-para colocar a margem que eu queria aqui*/
+    padding: 5px 15px 0 0; /*4-para colocar o deslocamento/distanciar do topo que eu queria aqui*/
+}
+.header-nav1 a{
+    color: white;
+    text-decoration: none; /*retira o sublinhado do link/texto*/
+    text-transform: uppercase; /*deixa o texto todo maiusculo*/
+    font-size: 12px;
+    letter-spacing: 1.5px; /*espaço entre as letras do texto*/
+    transition: color .3s linear; /*o TRANSITION espera receber 3 valor: 1- a propriedade que eu estou animando(ex color), 2- durante quanto tempo(ex 0.3 de segundo, 3- função de aceleração/desacelaração(ex: Liner não tem aceleração e nem desacelaração)*/
+}
+.header-nav1 a:hover{
+    color: #425564;  /*o HOVER é usado para quando colocado o cursor/mouse sobre o texto, fica na color colocada*/
+}
+.header-nav1 .lista3{
+    list-style: none;
+    display: initial; /*Transforma texto em bloco e coloca um do lado do outro*/
+    margin: 0 0 0 0; /*3-para colocar a margem que eu queria aqui*/
+    padding: 5px 15px 0 0; /*4-para colocar o deslocamento/distanciar do topo que eu queria aqui*/
+    
+}
+.lista3 ul{
+    height: 0;
+    overflow: hidden;
+        
+    transition: height .5s;
+}
+.lista3:hover ul{
+    height: 50px;
+   
+}
+
+
+.portfolio{
+    padding: 50px 100px; /*alinhei todo o Bloco, com Topo/Fundo 50 e Dir/Esq como 100, para o Bloco ficar menor que a Largura da Foto e ter um destaque no visual*/
+    text-align: center; /*alinhei todo o Bloco centralmente*/
+}
+.portfolio h1{
+    font-size: 36px;
+    color: #252525;
+}
+.portfolio p{
+    font-size: 16px;
+    line-height: 2; /*espaço entre as linhas do texto*/
+    color: #555;
+}
+
+
+
+.gallery{
+    color: #555;
+    padding: 0 100px 50px 100px; /*alinhei todo o Bloco, com Topo 0 pq no Portiforio já tem 50 de Fundo, Fundo 50 e Dir/Esq como 100, para o Bloco ficar menor que a Largura da Foto e ter um destaque no visual*/
+    overflow: auto; /*senão colocar OVERFLOW o FLOAT faz a Class Mãe gallery ficar sem formatação*/
+}
+
+.gallery-card{
+    width: 33%; /* coloquei 33% para preencher todo o bloco*/
+    float: left; /*FLOAT faz ficar um ao lado do outro, LEFt mantem a ordem de 1,2,3 , RIGHT inverte a ordem 3,2,1*/
+    text-align: center;
+}
+
+.gallery-title{
+    text-transform: uppercase; /*deixa o texto todo maiusculo*/
+    letter-spacing: 4px; /*espaço entre as letras do texto*/
+    font-size: 16px;
+    font-weight: bold; /*deixa a fonte mais grossa tipo negrito*/
+    width: 95%;
+    padding-left: 12px;
+}
+.gallery-text{
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    padding-left: 12px;
+}
+
+.about{
+    background-color: #003d52; 
+    padding: 100px; 
+    color: white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat; /*como a Foto é menor que o espaço do bloco, senão colocar o"no-repeat" ela fica repetindo para preencher todo o espaço do bloco*/
+    background-position: right bottom; /*coloquei para fixar a imagem no canto inferior direito*/
+}
+.about h2{
+    text-transform: uppercase; /*deixa o texto todo maiusculo*/
+    font-size: 50px;
+    font-weight: normal; /*deixa a fonte normal*/
+}
+.about p{
+    line-height: 1.5; /*espaço entre as linhas do texto*/
+    width: 70%; /*tamanho do P em relação ao bloco do seus 100%, o resto preencimento do Bloco é o padding*/
+}
+
+#contact{
+    margin: 50px 0; /*coloquei margem de 50px topo/fundo para e 0px dir/esq*/
+}
+
+#contact address{
+    color: #143f52;
+    text-transform: uppercase; /*deixa o texto todo maiusculo*/
+    font-size: 26px;
+    font-style: normal; /*tirei o italico, pq já vem de padrão na tag address*/
+    text-align: center;
+    font-weight: bold; /*deixa a fonte mais grossa tipo negrito*/
+}
+
+.maps{
+    width: 100%;
+    height: 450px;
+    margin-top: 15px;
+}
+.maps iframe{
+    width: 100%;
+}
+
+.rodape{
+    background: #003d52;
+    padding: 25px;
+    font-size: 12px;
+    color: #6f8597;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+
+
